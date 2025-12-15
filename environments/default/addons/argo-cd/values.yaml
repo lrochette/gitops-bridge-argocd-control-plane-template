@@ -15,10 +15,10 @@ repoServer:
     minReplicas: 1
   resources: # Adjust based on your specific use case (required for HPA)
     requests:
-      cpu: '100m'
+      cpu: '300m'
       memory: '256Mi'
     limits:
-      cpu: '200m'
+      cpu: '400m'
       memory: '512Mi'
   metrics:
     enabled: true
