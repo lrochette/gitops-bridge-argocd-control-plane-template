@@ -40,6 +40,11 @@ spec:
     metadata:
       name: addon-{{name}}-{{values.addonChart}}
     spec:
+      ignoreDifferences:
+        - group: apiextensions.k8s.io
+          kind: CustomResourceDefinition
+          jsonPointers:
+            - /spec/preserveUnknownFields
       project: default
       sources:
         - repoURL: '{{metadata.annotations.addons_repo_url}}'
