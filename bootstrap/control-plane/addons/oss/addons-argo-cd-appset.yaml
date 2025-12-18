@@ -14,7 +14,8 @@ spec:
               values:
                 addonChart: argo-cd
                 # anything not staging or prod use this version
-                addonChartVersion: 6.6.0
+                #addonChartVersion: 6.6.0
+                addonChartVersion: 9.1.8
                 addonChartRepositoryNamespace: argocd
                 addonChartRepository: https://argoproj.github.io/argo-helm
               selector:
